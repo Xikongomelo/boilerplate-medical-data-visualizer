@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 1
-df = None
+df = pd.read_csv('medical_examination.csv', delimiter = ',')
 
 # 2
-df['overweight'] = None
+df['overweight'] = df['weight'] / (df['height'] **2)
 
 # 3
 
